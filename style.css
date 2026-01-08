@@ -1,82 +1,15 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f0f4f7;
-  margin: 0;
-  padding: 0;
-}
-
-.chat-container {
-  max-width: 600px;
-  margin: 50px auto;
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-h1 {
-  color: #1e90ff;
-}
-
-.chat-box {
-  height: 350px;
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 8px;
-  background: #fafafa;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.user-msg {
-  text-align: right;
-  color: #0044cc;
-  margin: 5px 0;
-}
-
-.bot-msg {
-  text-align: left;
-  color: #228B22;
-  margin: 5px 0;
-}
-
-/* Robot avatar styling */
-.robot-container {
+.lesson-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
   margin-bottom: 10px;
 }
 
-.robot {
-  width: 100px;
-  transition: transform 0.3s;
+.lesson-menu button {
+  background: #28a745;
+  font-size: 14px;
 }
 
-/* Animation when talking */
-.robot.talking {
-  transform: scale(1.1) rotate(-5deg);
-  animation: talkingAnim 0.3s infinite alternate;
-}
-
-@keyframes talkingAnim {
-  0% { transform: scale(1.1) rotate(-5deg); }
-  50% { transform: scale(1) rotate(5deg); }
-  100% { transform: scale(1.1) rotate(-5deg); }
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  background: #1e90ff;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: #187bcd;
+.lesson-menu button:hover {
+  background: #218838;
 }
